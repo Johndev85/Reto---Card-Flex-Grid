@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Ubuntu:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  background-color: whitesmoke;
+  width: 100%;
+  padding: 40px;
+
+}
+
+.First-container {
+    border: 2px solid  #979797;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    background-color: #ffffff;
+}
+
+.First-container:hover {
+    box-shadow: 0 0 5px 1px grey;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Card-header .Card-titles {
+    margin: 18px;
+}
+
+.Card-header .Card-image {
+    background-color: #ffffff;
+}
+
+.Card-header .Card-image img {
+    width: 70px;
+    cursor: pointer;
+}
+
+
+.Card-header .Card-titles h1 {
+    font-size: 25px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.Card-header .Card-titles h3 {
+    font-family: 'Patrick Hand', cursive;
+}
+
+
+.secon-container .Card-image {
+    display: flex;
+    justify-content: center;
+}
+
+.secon-container .Card-image img {
+    width: 320px;
+    transition: all .5s ease-out;
+}
+
+.secon-container .Card-image img:hover {
+    transform: scale(1.1);
+}
+
+
+.secon-container .Card-text {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Card-footer .Card-buttons {
+    display: flex;
+}
+
+.Card-footer .Card-buttons li {
+    list-style: none;
+}
+
+.Card-footer .Card-buttons li button {
+    margin: 20px;
+    padding: 10px;
+    width: 120px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border-radius: 15px;
+}
+
+.Card-footer .Card-buttons li button:hover {
+    box-shadow: 0 0 10px 2px grey;
+    background-color: #fbb028;
+    color: black;
+}
+
+.Card-footer .social {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Card-footer .social .favorite {
+    transition: all .5s ease-out;
+}
+
+.Card-footer .social .favorite:hover {
+    transition: all .5s ease-out;
+    transform: scale(1.1);
+}
