@@ -109,7 +109,7 @@ footer {
 }
 
 .Card-footer .Card-buttons li button:hover {
-    box-shadow: 0 0 10px 2px grey;
+    box-shadow: 0 0 10px 2px #5b5b5b;
     background-color: #fbb028;
     color: black;
 }
