@@ -2,7 +2,7 @@
 
 Make a card in flexbox and grid version.
 
-Using semantic HTML and CSS flex and grid concepts.
+Using semantic HTML and CSS Grid concepts.
 
 - Watch the live project: https://johndev85.github.io/Reto---Card-Flex-Grid/.
 
