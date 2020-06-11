@@ -13,42 +13,38 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 16px;
-  background-color:#fff874;
-  width: 100%;
-  padding: 40px;
-
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
 }
 
 .First-container {
-    border: 2px solid  #979797;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template: 160px 300px 80px / 450px;
     justify-content: center;
-    align-items: normal;
-    background-color: #ffffff;
+    align-items: center;
 }
 
-.First-container:hover {
-    box-shadow: 0 0 5px 1px #3a6907;
-}
-
-header {
-    display: flex;
-    justify-content: space-evenly;
+.Card-header {
+    display: grid;
+    grid-template-columns: 90px 1fr;
 }
 
 .Card-header .Card-titles {
-    margin: 18px;
+    display: grid;
+    align-items: stretch;
+    padding: 5px;
+}
+
+.Card-header .Card-titles h1 {
+    font-size: 18px;
+}
+
+.Card-header .Card-titles h3 {
+    font-size: 15px;
 }
 
 .Card-header .Card-image {
-    background-color: #ffffff;
+    justify-self: center;
 }
 
 .Card-header .Card-image img {
@@ -56,86 +52,45 @@ header {
     cursor: pointer;
 }
 
-
-.Card-header .Card-titles h1 {
-    font-size: 25px;
-    font-family: 'Patrick Hand', cursive;
+.secon-container {
+    display: grid;
+    grid-template-rows: 220px 80px;
 }
-
-.Card-header .Card-titles h3 {
-    font-family: 'Patrick Hand', cursive;
-}
-
 
 .secon-container .Card-image {
-    display: flex;
-    justify-content: center;
+    justify-self: center;
 }
 
 .secon-container .Card-image img {
     width: 320px;
-    transition: all .5s ease-out;
 }
 
-.secon-container .Card-image img:hover {
-    transform: scale(1.1);
+.secon-container .Card-text p {
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+    padding: 5px;
 }
 
-
-.secon-container .Card-text {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-
-span {
-    font-weight: 700;
-    font-size: 20px;
-    font-family: 'Patrick Hand', cursive;
-}
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: #53b95b;
+.Card-footer {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .Card-footer .Card-buttons {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
 }
 
 .Card-footer .Card-buttons li {
     list-style: none;
 }
 
-.Card-footer .Card-buttons li button {
-    margin: 15px;
-    padding: 10px;
-    width: 120px;
-    font-weight: 700;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: orange;
-    color: white;
-    border-radius: 15px;
-}
-
-.Card-footer .Card-buttons li button:hover {
-    box-shadow: 0 0 10px 2px #3a6907;
-    background-color: #fbb028;
-    color: #377b02;
-}
-
 .Card-footer .social {
-    margin: 10px;
-    cursor: pointer;
-}
-
-.Card-footer .social .favorite {
-    transition: all .5s ease-out;
-}
-
-.Card-footer .social .favorite:hover {
-    transition: all .5s ease-out;
-    transform: scale(1.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
 }
